@@ -30,7 +30,7 @@ nem:xem = true
 
 divisibility = 6
 duration = 0
-supply = 8'998'999'998'000'000
+supply = 7'831'975'436'000'000
 isTransferable = true
 isSupplyMutable = false
 isRestrictable = false
