@@ -30,7 +30,7 @@ maxMosaicAtomicUnits = 9'000'000'000'000'000
 
 totalChainImportance = {{total_chain_importance}}
 minHarvesterBalance = 10'000'000'000
-harvestBeneficiaryPercentage = 10
+harvestBeneficiaryPercentage = 25
 
 blockPruneInterval = 360
 maxTransactionsPerBlock = 1'500
