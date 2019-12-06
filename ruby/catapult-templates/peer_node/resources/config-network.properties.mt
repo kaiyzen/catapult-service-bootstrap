@@ -10,8 +10,8 @@ generationHash = {{network_generation_hash}}
 enableVerifiableState = {{enable_verifiable_state}}
 enableVerifiableReceipts = {{enable_verifiable_receipts}}
 
-currencyMosaicId = {{{currency_mosaic_id}}}
-harvestingMosaicId = {{{harvesting_mosaic_id}}}
+currencyMosaicId = {{currency_mosaic_id}}
+harvestingMosaicId = {{harvesting_mosaic_id}}
 
 blockGenerationTargetTime = 15s
 blockTimeSmoothingFactor = 3000
@@ -25,10 +25,10 @@ defaultDynamicFeeMultiplier = 1'000
 maxTransactionLifetime = 24h
 maxBlockFutureTime = 500ms
 
-initialCurrencyAtomicUnits = 8'998'999'998'000'000
+initialCurrencyAtomicUnits = {{initial_currency_supply}}
 maxMosaicAtomicUnits = 9'000'000'000'000'000
 
-totalChainImportance = {{{total_chain_importance}}}
+totalChainImportance = {{total_chain_importance}}
 minHarvesterBalance = 10'000'000'000
 harvestBeneficiaryPercentage = 25
 

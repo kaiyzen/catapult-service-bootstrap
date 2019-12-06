@@ -23,8 +23,8 @@ module Catapult
         end
 
         # TODO: this should be calculeted
+        INITIAL_CURRENCY_SUPPLY = "7'831'975'436'000'000"
         TOTAL_CHAIN_IMPORTANCE = "7'831'975'436'000'000" # the sum of the currency harvesting amounts should be a power of ten of this
-        # TOTAL_CHAIN_IMPORTANCE = "8'000'000" # the sum of the currency harvesting amounts should be a power of ten of this
 
         CURRENCY_MOSAIC_ID     = "0x5B6B'5282'5A09'2704" # this get overwritten so the exact value makes no difference
         HARVESTING_MOSAIC_ID   = "0x468A'5847'D783'45DA" # this get overwritten so the exact value makes no difference
@@ -42,6 +42,7 @@ module Catapult
             enable_cache_database_storage: true,
             enable_auto_sync_cleanup: true,
 
+            initial_currency_supply: INITIAL_CURRENCY_SUPPLY,
             total_chain_importance: TOTAL_CHAIN_IMPORTANCE,
             currency_mosaic_id: CURRENCY_MOSAIC_ID,
             harvesting_mosaic_id: HARVESTING_MOSAIC_ID,

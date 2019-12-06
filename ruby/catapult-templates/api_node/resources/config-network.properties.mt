@@ -25,7 +25,7 @@ defaultDynamicFeeMultiplier = 1'000
 maxTransactionLifetime = 24h
 maxBlockFutureTime = 500ms
 
-initialCurrencyAtomicUnits = 7'831'975'436'000'000
+initialCurrencyAtomicUnits = {{initial_currency_supply}} 
 maxMosaicAtomicUnits = 9'000'000'000'000'000
 
 totalChainImportance = {{total_chain_importance}}
