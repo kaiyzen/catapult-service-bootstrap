@@ -16,8 +16,8 @@ module Catapult
     class NemesisPropertiesFile
       module TemplateBindings
         XEM_TOTAL_SUPPLY   = "7'831'975'436'000'000"
-	    XEM_ACCOUNT_SUPPLY = "391'598'771'800'000"
-        XEM_NUM_OF_ACCOUNTS = 20 # this has to equal ration XEM_TOTAL_SUPPLY/XEM_ACCOUNT_SUPPLY
+	XEM_ACCOUNT_SUPPLY = "391'598'771'800'000"
+        XEM_NUM_OF_ACCOUNTS = 18 # this has to equal ration XEM_TOTAL_SUPPLY/XEM_ACCOUNT_SUPPLY
         def self.template_bindings(nemesis_keys_info)
           key_info_array = nemesis_keys_info.key_info_array
           generation_info = nemesis_keys_info.generation_info
@@ -33,16 +33,18 @@ module Catapult
         private
 
         # TODO: hard coding until we figure out how to dynamically compute the mosaic ids in network config
-        NUM_HARVEST_KEYS       = 4
-        HARVEST_ACCOUNT_SUPPLY = "3'750'000"
+        NUM_HARVEST_KEYS        = 20
+	HARVEST_KEY_INDEX_START = 18
+	HARVEST_KEY_INDEX_END   = NUM_HARVEST_KEYS + HARVEST_KEY_INDEX_START
+        HARVEST_ACCOUNT_SUPPLY = "39'159'877'180'000"
         def self.cat_harvest_distribution(key_info_array)
           key_info_array[0...NUM_HARVEST_KEYS].map { |key_info| distribution(key_info, HARVEST_ACCOUNT_SUPPLY) }
         end
 
-        NUM_CURRENCY_KEYS       = 20 # this has to equal ration XEM_TOTAL_SUPPLY/XEM_ACCOUNT_SUPPLY
+        NUM_CURRENCY_KEYS       = 18 # this has to equal ration XEM_TOTAL_SUPPLY/XEM_ACCOUNT_SUPPLY
         CURRENCY_ACCOUNT_SUPPLY = XEM_ACCOUNT_SUPPLY
         def self.cat_currency_distribution(key_info_array)
-          key_info_array[0...NUM_CURRENCY_KEYS].map { |key_info| distribution(key_info, CURRENCY_ACCOUNT_SUPPLY) }
+          key_info_array[20...38].map { |key_info| distribution(key_info, CURRENCY_ACCOUNT_SUPPLY) }
         end
 
         def self.distribution(key_info, amount)

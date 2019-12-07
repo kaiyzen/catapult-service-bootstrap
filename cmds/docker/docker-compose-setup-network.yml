@@ -19,7 +19,7 @@ services:
 
   generate-raw-addresses:
     build: dockerfiles/tools
-    command: bash -c "/bin-mount/generate-raw-addresses-if-needed 50 /addresses/raw-addresses.txt /addresses/addresses.yaml"
+    command: bash -c "/bin-mount/generate-raw-addresses-if-needed 100 /addresses/raw-addresses.txt /addresses/addresses.yaml"
     volumes:
     - ../../bin/bash:/bin-mount
     - ../../build/generated-addresses:/addresses:rw

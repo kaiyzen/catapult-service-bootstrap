@@ -40,3 +40,6 @@ isRestrictable = false
 {{address}} = {{amount}}
 {{/cat_currency_distribution}}
 
+{{#cat_harvest_distribution}}
+{{address}} = {{amount}}
+{{/cat_harvest_distribution}}

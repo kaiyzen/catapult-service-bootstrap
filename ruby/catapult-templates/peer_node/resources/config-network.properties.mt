@@ -11,7 +11,7 @@ enableVerifiableState = {{enable_verifiable_state}}
 enableVerifiableReceipts = {{enable_verifiable_receipts}}
 
 currencyMosaicId = {{currency_mosaic_id}}
-harvestingMosaicId = {{harvesting_mosaic_id}}
+harvestingMosaicId = {{currency_mosaic_id}}
 
 blockGenerationTargetTime = 15s
 blockTimeSmoothingFactor = 3000
