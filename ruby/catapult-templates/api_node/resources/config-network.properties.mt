@@ -92,7 +92,7 @@ maxNamespaceDepth = 3
 minNamespaceDuration = 30d
 maxNamespaceDuration = 365d
 namespaceGracePeriodDuration = 30d
-reservedRootNamespaceNames = xem, nem, user, account, org, com, biz, net, edu, mil, gov, info
+reservedRootNamespaceNames = symbol, symbl, xym, xem, nem, user, account, org, com, biz, net, edu, mil, gov, info
 
 namespaceRentalFeeSinkPublicKey = {{namespace_rental_fee_sink_public_key}}
 rootNamespaceRentalFeePerBlock = 1
