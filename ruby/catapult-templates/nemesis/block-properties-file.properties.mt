@@ -15,18 +15,18 @@ binDirectory = ../seed/public-test
 
 [namespaces]
 
-nem = true
-nem.xem = true
+symbol = true
+symbol.xym = true
 
-[namespace>nem]
+[namespace>symbol]
 
 duration = 0
 
 [mosaics]
 
-nem:xem = true
+symbol:xym = true
 
-[mosaic>nem:xem]
+[mosaic>symbol:xym]
 
 divisibility = 6
 duration = 0
@@ -35,7 +35,7 @@ isTransferable = true
 isSupplyMutable = false
 isRestrictable = false
 
-[distribution>nem:xem]
+[distribution>symbol:xym]
 {{#cat_currency_distribution}}
 {{address}} = {{amount}}
 {{/cat_currency_distribution}}
