@@ -1,2 +1,2 @@
-FROM  techbureau/catapult-server:gcc-keccak-0.9.2.1
+FROM  kaiyzen/abc123-test:two
 ADD ./userconfig /userconfig
