@@ -2,7 +2,7 @@
 
 identifier = {{network_identifier}}
 publicKey = {{network_public_key}}
-nodeEqualityStrategy = public-key
+nodeEqualityStrategy = host
 generationHash = {{network_generation_hash}}
 epochAdjustment = 1573430400s
 
@@ -19,7 +19,7 @@ blockTimeSmoothingFactor = 3000
 
 importanceGrouping = 1433
 importanceActivityPercentage = 5
-maxRollbackBlocks = 398
+maxRollbackBlocks = 1433
 maxDifficultyBlocks = 60
 defaultDynamicFeeMultiplier = 1'000
 
