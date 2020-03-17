@@ -1,2 +1,2 @@
-FROM  kaiyzen/abc123-test:93s2
+FROM techbureau/catapult-server:gcc-0.9.3.1
 ADD ./userconfig /userconfig
