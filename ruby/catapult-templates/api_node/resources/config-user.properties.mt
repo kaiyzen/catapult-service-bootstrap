@@ -4,6 +4,6 @@ enableDelegatedHarvestersAutoDetection = true
 
 [storage]
 
-certificateDirectory = /data/cert
+certificateDirectory = /userconfig/resources/cert
 dataDirectory = /data
 pluginsDirectory = /usr/catapult/lib
