@@ -1,9 +1,9 @@
 [account]
 
-bootPrivateKey = {{boot_private_key}}
 enableDelegatedHarvestersAutoDetection = true
 
 [storage]
 
+certificateDirectory = /data/cert
 dataDirectory = /data
 pluginsDirectory = /usr/catapult/lib
