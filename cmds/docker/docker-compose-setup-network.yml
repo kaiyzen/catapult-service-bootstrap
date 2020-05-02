@@ -50,6 +50,7 @@ services:
     stop_signal: SIGINT
     volumes:
     - ../../build/catapult-config/peer-node-0/userconfig/resources/:/userconfig/resources/
+    - ../../identity/peer-node-0/cert/:/userconfig/resources/cert
     - ../../build/nemesis/:/nemesis
     - ../../data/peer-node-0:/data:rw
     - ../../bin/bash:/bin-mount
@@ -63,6 +64,7 @@ services:
     stop_signal: SIGINT
     volumes:
     - ../../build/catapult-config/peer-node-1/userconfig/resources/:/userconfig/resources/
+    - ../../identity/peer-node-1/cert/:/userconfig/resources/cert
     - ../../build/nemesis/:/nemesis
     - ../../data/peer-node-1:/data:rw
     - ../../bin/bash:/bin-mount
@@ -76,6 +78,7 @@ services:
     stop_signal: SIGINT
     volumes:
     - ../../build/catapult-config/api-node-0/userconfig/resources/:/userconfig/resources/
+    - ../../identity/api-node-0/cert/:/userconfig/resources/cert
     - ../../build/nemesis/:/nemesis
     - ../../data/api-node-0:/data:rw
     - ../../bin/bash:/bin-mount
