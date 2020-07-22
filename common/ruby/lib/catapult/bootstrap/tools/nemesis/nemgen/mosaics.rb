@@ -5,8 +5,8 @@ module Catapult::Bootstrap
       require_relative('mosaics/element')
 
       def initialize(nemgen_log)
-        @currency_mosaic_id   = Element.id(:currency, nemgen_log)
-        @harvesting_mosaic_id = Element.id(:harvesting, nemgen_log)
+        @currency_mosaic_id   = Element.id(:xym, nemgen_log)
+        @harvesting_mosaic_id = Element.id(:xym, nemgen_log)
       end
 
       def self.parse(nemgen_log)

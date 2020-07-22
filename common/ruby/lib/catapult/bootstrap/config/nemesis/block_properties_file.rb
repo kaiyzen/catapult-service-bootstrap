@@ -31,14 +31,14 @@ module Catapult::Bootstrap
         BIN_DIRECTORY
       end
 
-      BASE_NAMESPACE = 'cat'
+      BASE_NAMESPACE = 'symbol'
       def self.base_namespace
         BASE_NAMESPACE
       end
 
-      CURRENCY_MOSAIC_NAME   = 'currency'
-      HARVESTING_MOSAIC_NAME = 'harvest'
-      MosaicNameStruct = Struct.new(:currency, :harvesting)
+      CURRENCY_MOSAIC_NAME   = 'xym'
+      HARVESTING_MOSAIC_NAME = 'xym'
+      MosaicNameStruct = Struct.new(:xym, :xym_test)
       def self.mosaic_name
         MosaicNameStruct.new(CURRENCY_MOSAIC_NAME, HARVESTING_MOSAIC_NAME)
       end
